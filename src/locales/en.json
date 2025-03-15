@@ -5,7 +5,9 @@
     "counter_link": "Counter",
     "portfolio_link": "Portfolio",
     "sign_in_link": "Sign in",
-    "sign_up_link": "Sign up"
+    "sign_up_link": "Sign up",
+    "sign_out": "Sign out",
+    "dashboard_link": "Dashboard"
   },
   "BaseTemplate": {
     "description": "Starter code for your Nextjs Boilerplate with Tailwind CSS",
@@ -53,11 +55,13 @@
   },
   "SignIn": {
     "meta_title": "Sign in",
-    "meta_description": "Seamlessly sign in to your account with our user-friendly login process."
+    "meta_description": "Seamlessly sign in to your account with our user-friendly login process.",
+    "back_to_home": "Back to Home"
   },
   "SignUp": {
     "meta_title": "Sign up",
-    "meta_description": "Effortlessly create an account through our intuitive sign-up process."
+    "meta_description": "Effortlessly create an account through our intuitive sign-up process.",
+    "back_to_home": "Back to Home"
   },
   "Dashboard": {
     "meta_title": "Dashboard",
@@ -68,6 +72,7 @@
     "meta_title": "User Profile"
   },
   "DashboardLayout": {
+    "dashboard_home": "Home",
     "dashboard_link": "Dashboard",
     "user_profile_link": "Manage your account",
     "sign_out": "Sign out"

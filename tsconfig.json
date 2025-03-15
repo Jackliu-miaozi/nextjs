@@ -1,51 +1,53 @@
-/* eslint-disable jsonc/sort-keys */
 {
   "compilerOptions": {
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "incremental": true,
+    "target": "es2017",
+    "jsx": "preserve",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    // Path aliases
+    "baseUrl": ".",
     "module": "esnext",
     "moduleResolution": "bundler",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+      "@/public/*": [
+        "./public/*"
+      ]
+    },
     "resolveJsonModule": true,
-    "removeComments": true,
-    "preserveConstEnums": true,
+    // Load types
+    "types": [
+      "vitest/globals"
+    ],
+    "allowJs": true,
+    "checkJs": true,
     "strict": true,
-    "alwaysStrict": true,
     "strictNullChecks": true,
-    "noUncheckedIndexedAccess": true,
-
+    "allowUnreachableCode": false,
+    "alwaysStrict": true,
+    "noFallthroughCasesInSwitch": true,
     "noImplicitAny": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,
+    "noUncheckedIndexedAccess": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "allowUnreachableCode": false,
-    "noFallthroughCasesInSwitch": true,
-
-    "target": "es2017",
-    "outDir": "out",
-    "sourceMap": true,
-
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "allowJs": true,
-    "checkJs": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-
-    "jsx": "preserve",
     "noEmit": true,
+    "outDir": "out",
+    "preserveConstEnums": true,
+    "removeComments": true,
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
-    "incremental": true,
-
-    // Load types
-    "types": ["vitest/globals"],
-
-    // Path aliases
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["./src/*"],
-      "@/public/*": ["./public/*"]
-    },
-
+    "skipLibCheck": true,
     // Editor support
     "plugins": [
       {
@@ -53,12 +55,6 @@
       }
     ]
   },
-  "exclude": [
-    "./out/**/*",
-    "./node_modules/**/*",
-    "**/*.spec.ts",
-    "**/*.e2e.ts"
-  ],
   "include": [
     "next-env.d.ts",
     "**/*.ts",
@@ -66,5 +62,8 @@
     ".storybook/*.ts",
     ".next/types/**/*.ts",
     "**/*.mts"
+  ],
+  "exclude": [
+    "node_modules"
   ]
 }

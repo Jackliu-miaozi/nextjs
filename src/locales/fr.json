@@ -5,7 +5,9 @@
     "counter_link": "Compteur",
     "portfolio_link": "Portfolio",
     "sign_in_link": "Se connecter",
-    "sign_up_link": "S'inscrire"
+    "sign_up_link": "S'inscrire",
+    "sign_out": "Se déconnecter",
+    "dashboard_link": "Tableau de bord"
   },
   "BaseTemplate": {
     "description": "Code de démarrage pour Next.js avec Tailwind CSS",
@@ -53,11 +55,13 @@
   },
   "SignIn": {
     "meta_title": "Se connecter",
-    "meta_description": "Connectez-vous à votre compte avec facilité."
+    "meta_description": "Connectez-vous à votre compte avec facilité.",
+    "back_to_home": "Retour à l'accueil"
   },
   "SignUp": {
     "meta_title": "S'inscrire",
-    "meta_description": "Créez un compte facilement grâce à notre processus d'inscription intuitif."
+    "meta_description": "Créez un compte facilement grâce à notre processus d'inscription intuitif.",
+    "back_to_home": "Retour à l'accueil"
   },
   "Dashboard": {
     "meta_title": "Tableau de bord",
@@ -68,6 +72,7 @@
     "meta_title": "Profil de l'utilisateur"
   },
   "DashboardLayout": {
+    "dashboard_home": "Accueil",
     "dashboard_link": "Tableau de bord",
     "user_profile_link": "Gérer votre compte",
     "sign_out": "Se déconnecter"

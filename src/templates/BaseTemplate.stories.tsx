@@ -1,18 +1,18 @@
-import type { Meta, StoryObj } from '@storybook/react';
-import messages from '@/locales/en.json';
-import { userEvent, within } from '@storybook/test';
-import { NextIntlClientProvider } from 'next-intl';
-import { BaseTemplate } from './BaseTemplate';
+import type { Meta, StoryObj } from "@storybook/react";
+import messages from "@/locales/en.json";
+import { userEvent, within } from "@storybook/test";
+import { NextIntlClientProvider } from "next-intl";
+import { BaseTemplate } from "./BaseTemplate";
 
 const meta = {
-  title: 'Example/BaseTemplate',
+  title: "Example/BaseTemplate",
   component: BaseTemplate,
   parameters: {
-    layout: 'fullscreen',
+    layout: "fullscreen",
   },
-  tags: ['autodocs'],
+  tags: ["autodocs"],
   decorators: [
-    Story => (
+    (Story) => (
       <NextIntlClientProvider locale="en" messages={messages}>
         <Story />
       </NextIntlClientProvider>
@@ -37,7 +37,7 @@ export const BaseWithReactComponent = {
 
 export const BaseWithString = {
   args: {
-    children: 'String',
+    children: "String",
     leftNav: (
       <>
         <li>Link 1</li>
@@ -60,7 +60,7 @@ export const BaseWithHomeLink: Story = {
   },
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
-    const link = canvas.getByText('Link 1');
+    const link = canvas.getByText("Link 1");
 
     await userEvent.click(link);
   },
