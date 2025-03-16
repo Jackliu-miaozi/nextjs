@@ -8,13 +8,13 @@ import { logger } from "./Logger";
 // Re-export the rules to simplify imports inside handlers
 // 重新导出多个安全规则函数，方便在其他处理程序中使用
 export {
-  detectBot,      // 检测机器人
-  fixedWindow,    // 固定时间窗口限流
-  protectSignup,  // 注册保护
-  request,        // 请求处理
-  sensitiveInfo,  // 敏感信息保护
-  shield,         // 安全防护
-  slidingWindow,  // 滑动时间窗口限流
+  detectBot, // 检测机器人
+  fixedWindow, // 固定时间窗口限流
+  protectSignup, // 注册保护
+  request, // 请求处理
+  sensitiveInfo, // 敏感信息保护
+  shield, // 安全防护
+  slidingWindow, // 滑动时间窗口限流
 } from "@arcjet/next";
 
 // Create a base Arcjet instance which can be imported and extended in each route.
@@ -30,7 +30,6 @@ export default arcjet({
       mode: "LIVE", // 启用实时拦截模式，可以改为"DRY_RUN"仅记录日志
     }),
     // Other rules are added in different routes
-    
   ],
   log: logger, // 配置日志记录器
 });

@@ -35,9 +35,24 @@ export default async function Index(props: IIndexProps) {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {[
-            { id: "location", icon: "🏠", title: "近在咫尺", desc: "宿舍旁，随时学随时休" },
-            { id: "coffee", icon: "☕", title: "咖啡无限", desc: "全天供应，活力不断" },
-            { id: "life", icon: "🚿", title: "便利生活", desc: "洗浴洗衣，无忧学习" },
+            {
+              id: "location",
+              icon: "🏠",
+              title: "近在咫尺",
+              desc: "宿舍旁，随时学随时休",
+            },
+            {
+              id: "coffee",
+              icon: "☕",
+              title: "咖啡无限",
+              desc: "全天供应，活力不断",
+            },
+            {
+              id: "life",
+              icon: "🚿",
+              title: "便利生活",
+              desc: "洗浴洗衣，无忧学习",
+            },
           ].map((item, index) => (
             <div
               key={item.id}
@@ -134,7 +149,7 @@ export default async function Index(props: IIndexProps) {
             {[
               { id: "study", text: "无限自习室" },
               { id: "coffee", text: "无限咖啡" },
-              { id: "laundry", text: "每周3次洗衣" }
+              { id: "laundry", text: "每周3次洗衣" },
             ].map((item) => (
               <li key={item.id} className="flex items-center">
                 <span className="text-fuchsia-500 mr-2 animate-pulse">★</span>
@@ -157,9 +172,24 @@ export default async function Index(props: IIndexProps) {
         <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="space-y-4 animate-fade-in">
             {[
-              { id: "address", icon: "📍", title: "地址", desc: "济南大学宿舍区B座旁" },
-              { id: "phone", icon: "📱", title: "电话", desc: "+86 123-4567-8900" },
-              { id: "email", icon: "✉️", title: "邮箱", desc: "contact@jnu-studyroom.com" },
+              {
+                id: "address",
+                icon: "📍",
+                title: "地址",
+                desc: "济南大学宿舍区B座旁",
+              },
+              {
+                id: "phone",
+                icon: "📱",
+                title: "电话",
+                desc: "+86 123-4567-8900",
+              },
+              {
+                id: "email",
+                icon: "✉️",
+                title: "邮箱",
+                desc: "contact@jnu-studyroom.com",
+              },
             ].map((item) => (
               <div key={item.id} className="flex items-center group">
                 <span className="text-fuchsia-600 text-2xl mr-3 group-hover:animate-bounce">
@@ -179,8 +209,18 @@ export default async function Index(props: IIndexProps) {
             style={{ animationDelay: "200ms" }}
           >
             {[
-              { id: "hours", icon: "⏰", title: "营业时间", desc: "6:00-24:00" },
-              { id: "wechat", icon: "💬", title: "微信", desc: "JNU_StudyRoom" },
+              {
+                id: "hours",
+                icon: "⏰",
+                title: "营业时间",
+                desc: "6:00-24:00",
+              },
+              {
+                id: "wechat",
+                icon: "💬",
+                title: "微信",
+                desc: "JNU_StudyRoom",
+              },
               { id: "qq", icon: "📱", title: "QQ", desc: "987654321" },
             ].map((item) => (
               <div key={item.id} className="flex items-center group">
