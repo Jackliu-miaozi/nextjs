@@ -83,7 +83,7 @@ export default async function Layout(props: {
                 <li>
                   <SignOutButton>
                     <button
-                      className="border-none text-gray-700 hover:text-gray-900"
+                      className="border-none text-gray-700 hover:text-gray-900 cursor-pointer"
                       type="button"
                     >
                       {t("sign_out")}

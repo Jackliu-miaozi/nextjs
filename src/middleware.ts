@@ -2,7 +2,9 @@
 import type { NextFetchEvent, NextRequest } from "next/server";
 // 导入arcjet核心功能
 // 在middleware中，从libs中导入函数会导致nextjs报错tty
-import arcjet,{shield} from "@arcjet/next";
+// middleware.ts是在Edge Runtime环境中运行的，这个环境不支持Node.js的'tty'模块
+// 所以需要从这个环境直接读取env中的内容
+import arcjet, { fixedWindow, shield } from "@arcjet/next";
 
 // 导入Clerk认证中间件和路由匹配器
 import { clerkMiddleware, createRouteMatcher } from "@clerk/nextjs/server";
@@ -49,8 +51,18 @@ const aj = arcjet({
   key: process.env.ARCJET_KEY!,  // 使用环境变量中的Arcjet密钥
   rules: [
     // Protect against common attacks with Arcjet Shield
+    // 设置固定时间窗口的速率限制规则
+    // mode: LIVE表示实际限制请求
+    // window: 1小时的时间窗口
+    // max: 每个时间窗口最多允许100个请求
+    fixedWindow({
+      mode: "LIVE",
+      window: "1h", 
+      max: 100,
+    }),
     shield({
       mode: "LIVE",  // 设置为实时模式，将真实阻止可疑请求
+      // 配置固定时间窗口限流规则
     }),
   ],
 });
