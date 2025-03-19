@@ -1,7 +1,7 @@
 {
   "RootLayout": {
     "home_link": "Accueil",
-    "about_link": "A propos",
+    "about_link": "Réservation de Sièges",
     "counter_link": "Compteur",
     "portfolio_link": "Portfolio",
     "sign_in_link": "Se connecter",
@@ -32,11 +32,20 @@
   "CurrentCount": {
     "count": "Nombre : {count}"
   },
-  "About": {
-    "meta_title": "A propos",
-    "meta_description": "A propos description",
-    "about_paragraph": "Bienvenue sur notre page À propos ! Nous sommes une équipe de passionnés et dévoués à la création de logiciels.",
-    "translation_powered_by": "Traduction propulsée par"
+  "Booking": {
+    "meta_title": "Réservation de Sièges",
+    "meta_description": "Réservez facilement vos places avec notre système de réservation en ligne",
+    "about_paragraph": "Bienvenue sur notre page de réservation de sièges ! Ici, vous pouvez facilement réserver des places pour vos événements, films ou spectacles préférés. Sélectionnez simplement les sièges que vous souhaitez et complétez votre réservation en quelques clics.",
+    "translation_powered_by": "Traduction propulsée par",
+    "screen": "ÉCRAN",
+    "available": "Disponible",
+    "selected": "Sélectionné",
+    "sold": "Vendu",
+    "selected_seats": "Sièges Sélectionnés",
+    "no_seats_selected": "Aucun siège sélectionné",
+    "seat_info": "Rangée {row}, Siège {number} - {price}€",
+    "total_price": "Prix Total",
+    "proceed_to_checkout": "Procéder au Paiement"
   },
   "Portfolio": {
     "meta_title": "Portfolio",

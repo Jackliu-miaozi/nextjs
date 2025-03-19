@@ -1,7 +1,7 @@
 {
   "RootLayout": {
     "home_link": "首页",
-    "about_link": "关于",
+    "about_link": "订购座位",
     "counter_link": "计数器",
     "portfolio_link": "作品集",
     "sign_in_link": "登录",
@@ -32,11 +32,20 @@
   "CurrentCount": {
     "count": "计数：{count}"
   },
-  "About": {
-    "meta_title": "关于",
-    "meta_description": "关于页面描述",
-    "about_paragraph": "欢迎来到我们的关于页面！我们是一支热情的团队，致力于创造令人惊叹的软件。",
-    "translation_powered_by": "翻译由以下提供"
+  "Booking": {
+    "meta_title": "订购座位",
+    "meta_description": "使用我们的在线订票系统轻松预订座位",
+    "about_paragraph": "欢迎来到我们的订购座位页面！在这里，您可以轻松地为您喜爱的活动、电影或演出预订座位。只需选择您想要的座位，几步即可完成预订。",
+    "translation_powered_by": "翻译由以下提供",
+    "screen": "银幕",
+    "available": "可选",
+    "selected": "已选",
+    "sold": "已售",
+    "selected_seats": "已选座位",
+    "no_seats_selected": "未选择座位",
+    "seat_info": "{row}排 {number}号 - ¥{price}",
+    "total_price": "总价",
+    "proceed_to_checkout": "确认订购"
   },
   "Portfolio": {
     "meta_title": "作品集",

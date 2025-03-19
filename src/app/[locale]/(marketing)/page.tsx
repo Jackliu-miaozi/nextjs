@@ -161,6 +161,14 @@ export default async function Index(props: IIndexProps) {
             首月特价 <span className="line-through">¥299</span>{" "}
             <span className="text-fuchsia-600 font-bold">¥199</span>
           </p>
+          <div className="mt-6 text-center">
+            <Link
+              href={`/${locale}/about`}
+              className="inline-block bg-fuchsia-600 text-white px-6 py-3 rounded-full font-medium hover:bg-fuchsia-700 transform transition-all duration-300 hover:scale-105 animate-fade-in"
+            >
+              现在订购
+            </Link>
+          </div>
         </div>
       </section>
 
