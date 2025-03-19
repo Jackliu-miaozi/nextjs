@@ -68,7 +68,7 @@ export default async function Layout(props: {
             </li>
             <li>
               <Link
-                href="/about/"
+                href="/booking/"
                 className="border-none text-gray-700 hover:text-gray-900"
               >
                 {t("about_link")}

@@ -163,7 +163,7 @@ export default async function Index(props: IIndexProps) {
           </p>
           <div className="mt-6 text-center">
             <Link
-              href={`/${locale}/about`}
+              href={`/${locale}/booking`}
               className="inline-block bg-fuchsia-600 text-white px-6 py-3 rounded-full font-medium hover:bg-fuchsia-700 transform transition-all duration-300 hover:scale-105 animate-fade-in"
             >
               现在订购
