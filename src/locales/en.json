@@ -1,11 +1,13 @@
 {
   "RootLayout": {
     "home_link": "Home",
-    "about_link": "About",
+    "about_link": "Seat Booking",
     "counter_link": "Counter",
     "portfolio_link": "Portfolio",
     "sign_in_link": "Sign in",
-    "sign_up_link": "Sign up"
+    "sign_up_link": "Sign up",
+    "sign_out": "Sign out",
+    "dashboard_link": "Dashboard"
   },
   "BaseTemplate": {
     "description": "Starter code for your Nextjs Boilerplate with Tailwind CSS",
@@ -30,11 +32,20 @@
   "CurrentCount": {
     "count": "Count: {count}"
   },
-  "About": {
-    "meta_title": "About",
-    "meta_description": "About page description",
-    "about_paragraph": "Welcome to our About page! We are a team of passionate individuals dedicated to creating amazing software.",
-    "translation_powered_by": "Translation powered by"
+  "Booking": {
+    "meta_title": "Seat Booking",
+    "meta_description": "Book your seats easily with our online booking system",
+    "about_paragraph": "Welcome to our Seat Booking page! Here you can easily reserve seats for your favorite events, movies, or performances. Simply select the seats you want and complete your booking in just a few clicks.",
+    "translation_powered_by": "Translation powered by",
+    "screen": "SCREEN",
+    "available": "Available",
+    "selected": "Selected",
+    "sold": "Sold",
+    "selected_seats": "Selected Seats",
+    "no_seats_selected": "No seats selected",
+    "seat_info": "Row {row}, Seat {number} - ${price}",
+    "total_price": "Total Price",
+    "proceed_to_checkout": "Proceed to Checkout"
   },
   "Portfolio": {
     "meta_title": "Portfolio",
@@ -53,11 +64,13 @@
   },
   "SignIn": {
     "meta_title": "Sign in",
-    "meta_description": "Seamlessly sign in to your account with our user-friendly login process."
+    "meta_description": "Seamlessly sign in to your account with our user-friendly login process.",
+    "back_to_home": "Back to Home"
   },
   "SignUp": {
     "meta_title": "Sign up",
-    "meta_description": "Effortlessly create an account through our intuitive sign-up process."
+    "meta_description": "Effortlessly create an account through our intuitive sign-up process.",
+    "back_to_home": "Back to Home"
   },
   "Dashboard": {
     "meta_title": "Dashboard",
@@ -68,6 +81,7 @@
     "meta_title": "User Profile"
   },
   "DashboardLayout": {
+    "dashboard_home": "Home",
     "dashboard_link": "Dashboard",
     "user_profile_link": "Manage your account",
     "sign_out": "Sign out"

@@ -1,11 +1,13 @@
 {
   "RootLayout": {
     "home_link": "Accueil",
-    "about_link": "A propos",
+    "about_link": "Réservation de Sièges",
     "counter_link": "Compteur",
     "portfolio_link": "Portfolio",
     "sign_in_link": "Se connecter",
-    "sign_up_link": "S'inscrire"
+    "sign_up_link": "S'inscrire",
+    "sign_out": "Se déconnecter",
+    "dashboard_link": "Tableau de bord"
   },
   "BaseTemplate": {
     "description": "Code de démarrage pour Next.js avec Tailwind CSS",
@@ -30,11 +32,20 @@
   "CurrentCount": {
     "count": "Nombre : {count}"
   },
-  "About": {
-    "meta_title": "A propos",
-    "meta_description": "A propos description",
-    "about_paragraph": "Bienvenue sur notre page À propos ! Nous sommes une équipe de passionnés et dévoués à la création de logiciels.",
-    "translation_powered_by": "Traduction propulsée par"
+  "Booking": {
+    "meta_title": "Réservation de Sièges",
+    "meta_description": "Réservez facilement vos places avec notre système de réservation en ligne",
+    "about_paragraph": "Bienvenue sur notre page de réservation de sièges ! Ici, vous pouvez facilement réserver des places pour vos événements, films ou spectacles préférés. Sélectionnez simplement les sièges que vous souhaitez et complétez votre réservation en quelques clics.",
+    "translation_powered_by": "Traduction propulsée par",
+    "screen": "ÉCRAN",
+    "available": "Disponible",
+    "selected": "Sélectionné",
+    "sold": "Vendu",
+    "selected_seats": "Sièges Sélectionnés",
+    "no_seats_selected": "Aucun siège sélectionné",
+    "seat_info": "Rangée {row}, Siège {number} - {price}€",
+    "total_price": "Prix Total",
+    "proceed_to_checkout": "Procéder au Paiement"
   },
   "Portfolio": {
     "meta_title": "Portfolio",
@@ -53,11 +64,13 @@
   },
   "SignIn": {
     "meta_title": "Se connecter",
-    "meta_description": "Connectez-vous à votre compte avec facilité."
+    "meta_description": "Connectez-vous à votre compte avec facilité.",
+    "back_to_home": "Retour à l'accueil"
   },
   "SignUp": {
     "meta_title": "S'inscrire",
-    "meta_description": "Créez un compte facilement grâce à notre processus d'inscription intuitif."
+    "meta_description": "Créez un compte facilement grâce à notre processus d'inscription intuitif.",
+    "back_to_home": "Retour à l'accueil"
   },
   "Dashboard": {
     "meta_title": "Tableau de bord",
@@ -68,6 +81,7 @@
     "meta_title": "Profil de l'utilisateur"
   },
   "DashboardLayout": {
+    "dashboard_home": "Accueil",
     "dashboard_link": "Tableau de bord",
     "user_profile_link": "Gérer votre compte",
     "sign_out": "Se déconnecter"

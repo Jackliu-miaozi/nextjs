@@ -1,5 +1,6 @@
 import antfu from '@antfu/eslint-config';
 import nextPlugin from '@next/eslint-plugin-next';
+import prettier from 'eslint-config-prettier';
 import jestDom from 'eslint-plugin-jest-dom';
 import jsxA11y from 'eslint-plugin-jsx-a11y';
 import playwright from 'eslint-plugin-playwright';
@@ -54,4 +55,4 @@ export default antfu({
     'test/padding-around-all': 'error', // Add padding in test files
     'test/prefer-lowercase-title': 'off', // Allow using uppercase titles in test titles
   },
-});
+}, prettier);

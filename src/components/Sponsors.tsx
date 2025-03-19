@@ -1,5 +1,5 @@
 /* eslint-disable react-dom/no-unsafe-target-blank */
-import Image from 'next/image';
+import Image from "next/image";
 
 export const Sponsors = () => (
   <table className="border-collapse">
@@ -20,7 +20,11 @@ export const Sponsors = () => (
           </a>
         </td>
         <td className="border-2 border-gray-300 p-3">
-          <a href="https://l.crowdin.com/next-js" target="_blank" rel="noopener">
+          <a
+            href="https://l.crowdin.com/next-js"
+            target="_blank"
+            rel="noopener"
+          >
             <Image
               src="/assets/images/crowdin-dark.png"
               alt="Crowdin"

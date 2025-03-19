@@ -1,8 +1,8 @@
-import { LocaleSwitcher } from '@/components/LocaleSwitcher';
-import { BaseTemplate } from '@/templates/BaseTemplate';
-import { SignOutButton } from '@clerk/nextjs';
-import { getTranslations, setRequestLocale } from 'next-intl/server';
-import Link from 'next/link';
+import { LocaleSwitcher } from "@/components/LocaleSwitcher";
+import { BaseTemplate } from "@/templates/BaseTemplate";
+import { SignOutButton } from "@clerk/nextjs";
+import { getTranslations, setRequestLocale } from "next-intl/server";
+import Link from "next/link";
 
 export default async function DashboardLayout(props: {
   children: React.ReactNode;
@@ -12,19 +12,27 @@ export default async function DashboardLayout(props: {
   setRequestLocale(locale);
   const t = await getTranslations({
     locale,
-    namespace: 'DashboardLayout',
+    namespace: "DashboardLayout",
   });
 
   return (
     <BaseTemplate
-      leftNav={(
+      leftNav={
         <>
+          <li>
+            <Link
+              href="/"
+              className="border-none text-gray-700 hover:text-gray-900"
+            >
+              {t("dashboard_home")}
+            </Link>
+          </li>
           <li>
             <Link
               href="/dashboard/"
               className="border-none text-gray-700 hover:text-gray-900"
             >
-              {t('dashboard_link')}
+              {t("dashboard_link")}
             </Link>
           </li>
           <li>
@@ -32,17 +40,20 @@ export default async function DashboardLayout(props: {
               href="/dashboard/user-profile/"
               className="border-none text-gray-700 hover:text-gray-900"
             >
-              {t('user_profile_link')}
+              {t("user_profile_link")}
             </Link>
           </li>
         </>
-      )}
-      rightNav={(
+      }
+      rightNav={
         <>
           <li>
             <SignOutButton>
-              <button className="border-none text-gray-700 hover:text-gray-900" type="button">
-                {t('sign_out')}
+              <button
+                className="border-none text-gray-700 hover:text-gray-900 cursor-pointer"
+                type="button"
+              >
+                {t("sign_out")}
               </button>
             </SignOutButton>
           </li>
@@ -51,7 +62,7 @@ export default async function DashboardLayout(props: {
             <LocaleSwitcher />
           </li>
         </>
-      )}
+      }
     >
       {props.children}
     </BaseTemplate>
